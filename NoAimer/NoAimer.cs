@@ -18,4 +18,22 @@ namespace NoAimer
             Logger.LogInfo("No Aimer mod loaded");
         }
     }
+
+    [HarmonyPatch(typeof(PredictionManager))]
+    public class PredictionManagerPatches
+    {
+        [HarmonyPatch("SetLineRendererStatus")]
+        [HarmonyPrefix]
+        public static void LineRendererStatusAlwaysFalse(ref bool status)
+        {
+            status = false;
+        }
+
+        [HarmonyPatch("CreateBounceIndicator")]
+        [HarmonyPrefix]
+        public static bool NeverCreateBounceIndicator()
+        {
+            return false;
+        }
+    }
 }
