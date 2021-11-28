@@ -1,6 +1,6 @@
 # No Aimer for Peglin
 
-This is a mod for the Peglin Demo that removes the aimer.
+This is a mod for the Peglin Demo that removes the aimer. You can also do this (and more) with the [PeglinTweaks](https://github.com/bo0tzz/PeglinTweaks) mod.
 
 This mod is imperfect and comes with no warranties. It may break your game,
 prevent you from creating new savefiles, crash your computer, or set your house on fire.
